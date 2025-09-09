@@ -22,7 +22,6 @@ pertemuankeempat
 ├── ReadData.java       # Menampilkan data dalam format tabel rapi
 ├── UpdateData.java     # Mengubah data berdasarkan ID
 ├── DeleteData.java     # Menghapus data berdasarkan ID
-├── DropTable.java      # Menghapus tabel (opsional)
 └── MainApp.java        # Menu interaktif sebagai pengendali program
 ```
 
@@ -35,7 +34,6 @@ pertemuankeempat
 - **ReadData.java** → menampilkan data dengan format tabel rapi (`printf`) sehingga lebih mudah dibaca.  
 - **UpdateData.java** → mengubah data berdasarkan ID yang dipilih user. Jika tabel kosong, akan muncul pesan peringatan.  
 - **DeleteData.java** → menghapus data berdasarkan ID. Jika tabel kosong, program meminta user untuk melakukan insert terlebih dahulu.  
-- **DropTable.java** → menghapus seluruh tabel `komik` dari database.  
 - **MainApp.java** → menyediakan menu interaktif agar user bisa memilih operasi CRUD.  
 
 ---
@@ -49,7 +47,6 @@ Saat dijalankan, program menampilkan menu:
 3. Read Data
 4. Update Data
 5. Delete Data
-6. Drop Table
 0. Exit
 Pilih menu: _
 ```
@@ -76,10 +73,6 @@ ID    Judul                Pengarang            Tahun   Genre
 2     Naruto               Masashi Kishimoto    1999    Shonen
 ```
 
-**Delete Data (jika tabel kosong)**  
-```
-Belum ada data, kamu harus insert dulu.
-```
 
 ---
 
