@@ -21,28 +21,28 @@ Project terdiri dari beberapa class dengan pembagian sebagai berikut:
   Menggunakan constructor untuk inisialisasi objek Connection.  
   Atribut `conn` dibuat `protected` agar bisa diakses oleh class turunan.  
 
-- **CreateTable.java** `extends Connect`.
+- **CreateTable.java** `extends Connect`.  
   untuk membuat tabel di database.  
   Menggunakan Statement untuk menjalankan perintah `CREATE TABLE`.  
 
-- **InsertData.java** `extends Connect`.
+- **InsertData.java** `extends Connect`.  
   untuk menambahkan data ke tabel.  
   Menggunakan PreparedStatement agar query lebih aman.  
   Setelah insert, pengguna ditanya apakah ingin menginsert lagi (y/n) hingga maksimal 10 kali.  
 
-- **ReadData.java** `extends Connect`.
+- **ReadData.java** `extends Connect`.  
   untuk membaca data dari tabel.  
   Menggunakan ResultSet untuk menampilkan hasil query.  
 
-- **UpdateData.java** `extends Connect`.
+- **UpdateData.java** `extends Connect`.  
   untuk mengubah data berdasarkan ID.  
   Setelah update, pengguna ditanya apakah ingin update lagi (y/n).  
 
-- **DeleteData.java** `extends Connect`.
+- **DeleteData.java** `extends Connect`.  
   untuk menghapus data berdasarkan ID.  
   Jika tabel kosong, program menampilkan pesan: "Belum ada data, kamu harus insert dulu".  
 
-- **DropTable.java** `extends Connect`.
+- **DropTable.java** `extends Connect`.  
   untuk menghapus tabel dari database.  
 
 - **MenuInteraktif.java**  
